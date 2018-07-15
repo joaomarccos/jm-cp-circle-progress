@@ -1,21 +1,21 @@
 function cpCircleProgressController() {
   var ctrl = this;
   var strokeDashArray = 629;
-  
-  function calculate(){
-    ctrl.strokeDashOffset = Math.round( (ctrl.percent * strokeDashArray) / 100);
+
+  function calculate() {
+    ctrl.strokeDashOffset = Math.round((ctrl.percent * strokeDashArray) / 100);
   }
 
-  ctrl.$onInit = function (){
+  ctrl.$onInit = function () {
     calculate();
   };
 
-  ctrl.$onChanges = function(change){
-    if(change.percent && (change.percent.currentValue > 100 || change.percent.currentValue == undefined)){
+  ctrl.$onChanges = function (change) {
+    if (change.percent && (change.percent.currentValue > 100 || angular.isUndefined(change.percent.currentValue))) {
       ctrl.percent = 0;
     }
     calculate();
-  }
+  };
 }
 
 angular
