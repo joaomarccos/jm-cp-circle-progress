@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  
+  
+  <link rel="stylesheet" href="styles/app-236cd4d254.css">
+</head>
+
+
+<body ng-app="jmCircleProgressModule" ng-controller="AppController as vm">
+  <cp-circle-progress percent="vm.totalLoaded" description="Total Loaded"></cp-circle-progress>
+  
+  <div>
+    <label for="=totalLoaded">Total Loaded: </label>
+    <input type="number" max="100" min="0" [name="totalLoaded" ] ng-model="vm.totalLoaded">
+  </div>
+  
+</body>
+
+<script src="scripts/vendor-5dfd76d3e7.js"></script>
+
+<script src="scripts/app-17b8b9c080.js"></script>
+</html>
+
