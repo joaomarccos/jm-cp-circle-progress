@@ -2,7 +2,16 @@
   "name": "jm-cp-circle-progress",
   "version": "0.1.0",
   "dependencies": {
-    "angular": "^1.6.2"
+    "angular": "^1.6.2",
+    "skeleton": "^2.0.4"
+  },
+  "overrides": {
+     "skeleton": {
+       "main": [
+         "css/normalize.css",
+         "css/skeleton.css"
+       ]
+     } 
   },
   "devDependencies": {
     "angular-mocks": "^1.6.2"
