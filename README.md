@@ -3,4 +3,4 @@ Circle progress component for angular 1.x
 
 
 
-[Demo](https://joaomarccos.github.io/jm-cp-circle-progress/docs/)
+[Demo/Docs](https://joaomarccos.github.io/jm-cp-circle-progress/docs/)
